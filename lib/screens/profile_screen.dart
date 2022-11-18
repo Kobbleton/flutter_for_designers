@@ -1,10 +1,9 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_for_designers/components/cards/completed_courses_card.dart';
 import 'package:flutter_for_designers/components/lists/certificate_viewer.dart';
+import 'package:flutter_for_designers/components/lists/completed_courses_list.dart';
 import 'package:flutter_for_designers/constants.dart';
-import 'package:flutter_for_designers/model/course.dart';
 
 class ProfileScreen extends StatelessWidget {
   ProfileScreen({super.key});
@@ -284,8 +283,9 @@ class ProfileScreen extends StatelessWidget {
                 ],
               ),
             ),
-            CompletedCoursesCard(
-              course: completedCourses[1],
+            const CompletedCoursesList(),
+            const SizedBox(
+              height: 28,
             ),
           ],
         ),
